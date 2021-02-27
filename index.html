@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>Drop Down Menu Design</title>
+    <title>UTILITY APP</title>
 </head>
 <body>
-    <nav class = "menu-bar">
-    <ul id = "app">
-        <li>UTILITY APP <i class="fas fa-tools"></i></li>
-    </ul>
-    <ul>
-        <li id = "hash-gene">
-        <a href="#">Hash Generators</a>
-            <div class = "sub-menu">
-            <ul>
-                <li><a href="#">MD5 Hash Generator</a></li>
-                <li><a href="#">SHA-1 Hash Generator</a></li>
-                <li><a href="#">SHA-256 Hash Generator</a></li>
-                <li><a href="#">SHA-512 Hash Generator</a></li>
-            </ul>
-            </div>  
-        </li>
-
-        <li><a href="#">URL Encode-Decode</a></li>
-        <li><a href="#">Base64 Encode</a></li>
-        <li><a href="#">Base64 Decode</a></li>
-    </ul>
-   </nav>
-
-   
-
-
-   <script>
-       window.onload = () => {
-           document.querySelector(".sub-menu").setAttribute('style', 'display: none;');
-       }
-       document.getElementById("hash-gene").addEventListener('mouseenter', () => {
-                ////console.log("hello");
-                document.querySelector('.sub-menu').setAttribute('style', 'width : 100px; height: 300px; background-color : rgb(0,100,0); display : absolute; ')
-       });
-       document.getElementById("hash-gene").addEventListener('mouseleave', () => {
-           document.querySelector('.sub-menu').setAttribute('style', 'display : none;');
-       })
-   </script>
+    <header class="heading">
+        <div class = "logo">
+            <a style = "color : white; text-decoration: none;">UTILITY APP</a>
+            <i class="fas fa-cogs"></i>
+        </div>
+        <div class="options-nav">Base64Encoder/Decoder
+            <div class="contents">
+                <a href="#">Base64 Encode</a>
+                <a href="#">Base64 Decode</a>
+            </div>
+        </div>
+        <div class="options-nav">URLEncoder/Decoder
+            <div class="contents">
+                <a href="#">URL Encode</a>
+                <a href="#">URL Decode</a>
+            </div>
+        </div>
+        <div class="options-nav">Hash Generator
+            <div class="contents">
+                <a href="#">MD5 Hash Generator</a>
+                <a href="#">SHA-1 Hash Generator</a>
+                <a href="#">SHA-256 Hash Generator</a>
+                <a href="#">SHA-512 Hash Generator</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class = "main"> 
+        <h3>Encode the Text</h3>
+        <div class="textarea-content">
+            <div class="input-textarea">
+              <div><textarea type="text" class="input" rows="15" cols="60"></textarea></div>
+              <div class="button"><input type="button" class="encoder" value="Encode"></div>
+            </div>
+            <div class="output-textarea">
+              <div><textarea type="text" class="output" placeholder="Your results will appear here." rows="15" cols="60"></textarea></div>
+              <div class="button"><input type="button" class="reset" value="Reset"></div>
+            </div>
+          </div>
+    </div>
+    <footer id = "footer">
+         <h4>Made By Prajjwal Soni</h4>
+    </footer>
 </body>
 </html>
