@@ -11,6 +11,7 @@
     font-size: 18px;
     background-color: black;
     color : #fff;
+    font-family: monospace;
 }
 
 .contents {
@@ -61,19 +62,44 @@
     height : 40px;
     background-color: black;
     color : white;
-    text-align: center;
     margin-bottom: 0;
+    font-family: monospace;
+    text-align: center;
+    padding-top: center;
 }
+
 
 .encoder {
     height: 40px;
     width:  70px;
     background-color: green;
     color : white;
+    font-family: monospace;
 }
+
+.encoder:hover {
+    height: 43px;
+    width:  73px;
+    background-color: black;
+    color : white;
+    font-family: monospace;
+    border-radius: 3px solid black;
+}
+
 .reset {
     height: 40px;
     width:  70px;
     background-color: indigo;
     color : white;
+    font-family: monospace;
+}
+
+.reset:hover{
+    height: 43px;
+    width:  73px;
+    background-color: black;
+    color : white;
+    font-family: monospace;
+    border-radius: 3px solid black;
+
 }
