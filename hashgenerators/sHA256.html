@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <script src="./decoder.js" defer></script>
-    <title>Decoder App</title>
+    <script src="./sHA256.html" defer></script>
+    <title>sHA256 Hash Converter App</title>
 </head>
 <body>
     <header class="heading">
@@ -23,26 +23,26 @@
         </div>
         <div class="options-nav">URLEncoder/Decoder
             <div class="contents">
-                <a href="./encoder.html">URL Encode</a>
-                <a href="./decoder.html">URL Decode</a>
+                <a href="./../urlEncoderDecoder/encoder.html">URL Encode</a>
+                <a href="./../urlEncoderDecoder/decoder.html">URL Decode</a>
             </div>
         </div>
         <div class="options-nav">Hash Generator
             <div class="contents">
-                <a href="./../hashgenerators/md5Hash.html">MD5 Hash Generator</a>
-                <a href="./../hashgenerators/sHA1Hash.html">SHA-1 Hash Generator</a>
-                <a href="./../hashgenerators/sHA256.html">SHA-256 Hash Generator</a>
-                <a href="./../hashgenerators/sHA512.html">SHA-512 Hash Generator</a>
+                <a href="./md5Hash.html">MD5 Hash Generator</a>
+                <a href="./sHA1Hash.html">SHA-1 Hash Generator</a>
+                <a href="./sHA256.html">SHA-256 Hash Generator</a>
+                <a href="./sHA512.html">SHA-512 Hash Generator</a>
             </div>
         </div>
     </header>
     
     <div class = "main"> 
-        <h1 style = "font-family: monospace;">Decode the Text</h1>
+        <h1 style = "font-family: monospace;">Convert into sHA256</h1>
         <div class="textarea-content">
             <div class="input-textarea">
               <div><textarea type="text" class="input" rows="15" cols="60"></textarea></div>
-              <div class="button"><input type="button" class="btn" value="Decode"></div>
+              <div class="button"><input type="button" class="btn" value="convert"></div>
             </div>
             <div class="output-textarea">
               <div><textarea type="text" class="output" placeholder="Your results will appear here." rows="15" cols="60"></textarea></div>
