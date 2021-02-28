@@ -1,6 +1,6 @@
 
 
-let encoderbtn = document.querySelector(".encoder");
+let encoderbtn = document.querySelector(".btn");
 let resetbtn = document.querySelector(".reset");
     encoderbtn.addEventListener('click', () => {
         let text = document.querySelector(".input").value;

@@ -1,11 +1,11 @@
 
 
-let encoderbtn = document.querySelector(".decoder");
+let encoderbtn = document.querySelector(".btn");
 let resetbtn = document.querySelector(".reset");
     encoderbtn.addEventListener('click', () => {
         let text = document.querySelector(".input").value;
         ////console.log(text);
-        let decodedText = encodeURIComponent(String(text));
+        let decodedText = decodeURIComponent(String(text));
      
         document.querySelector(".output").value = decodedText;
      
